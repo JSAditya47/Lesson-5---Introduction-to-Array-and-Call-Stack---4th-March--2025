@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      body {
+        font-family: monospace;
+        font-size: 25px;
+        font-weight: bold;
+        font-style: italic;
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>JavaScript Objects Data Structure and Array</h2>
+
+    <script>
+      var student = {
+        name: " Aditya ",
+        age: " 13 ",
+        Grade: " 7 ",
+        hobby: " Coding, Guitar and Music ",
+        fav_sport: " Football ",
+      };
+
+      document.write(
+        "Student name is : " + student.name,
+        "<br>",
+        "Student Favourite Sport is : " + student.fav_sport,
+        "Student''s Age is : " + student.age,
+        "Student Reads in Class : " + student.Grade,
+        "Student's Hobbies are : " + student.hobby
+      );
+      document.write("<br>");
+
+      var color = ["white", "black", "red", "green", "blue"];
+
+      document.write("Before Popping the Colors are : " + color.join("*"));
+      document.write("<br>");
+      document.write("My Favourite Color is : " + color[3]);
+      document.write("<br>");
+      color.pop();
+      document.write("After Popping the Colors are : " + color.join(" [^.^] "));
+    </script>
+  </body>
+</html>
